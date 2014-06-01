@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<style>
+	#block{
+		width: 400px;
+		height: 400px;
+		background-color: #69c;
+		margin: 0 auto;
+		-webkit-transition: background-color 1s, width 3s;
+		-moz-transition: background-color 1s, width 3s;
+		-ms-transition: background-color 1s, width 3s;
+		-o-transition: background-color 1s, width 3s;
+		transition: background-color 1s, width 3s;
+	}
+
+	#block:hover{
+		background-color: red;
+		width: 600px;
+	}
+
+	.progress-bar{
+		height: 40px;
+		width: 40px;
+		background-color: #75CD65;
+	}
+	.progress-bar:hover{
+		width: 960px;
+	}
+
+	#bar1{
+		-webkit-transition: width 5s linear;
+		-moz-transition: width 5s linear;
+		-ms-transition: width 5s linear;
+		-o-transition: width 5s linear;
+		transition: width 5s linear;
+	}
+	#bar2{
+		-webkit-transition: width 5s ease;
+		-moz-transition: width 5s ease;
+		-ms-transition: width 5s ease;
+		-o-transition: width 5s ease;
+		transition: width 5s ease;
+	}
+	#bar3{
+		-webkit-transition: width 5s ease-in;
+		-moz-transition: width 5s ease-in;
+		-ms-transition: width 5s ease-in;
+		-o-transition: width 5s ease-in;
+		transition: width 5s ease-in;
+	}
+	#bar4{
+		-webkit-transition: width 5s ease-out;
+		-moz-transition: width 5s ease-out;
+		-ms-transition: width 5s ease-out;
+		-o-transition: width 5s ease-out;
+		transition: width 5s ease-out;
+	}
+	#bar5{
+	-webkit-transition: width 5s ease-in-out;
+	-moz-transition: width 5s ease-in-out;
+	-ms-transition: width 5s ease-in-out;
+	-o-transition: width 5s ease-in-out;
+	transition: width 5s ease-in-out;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="block">
+		
+	</div>
+
+	<div id="wrapper">
+		<P>linear</P>
+		<div class="progress-bar" id="bar1"></div>
+		<P>ease</P>
+		<div class="progress-bar" id="bar2"></div>
+		<P>ease-in</P>
+		<div class="progress-bar" id="bar3"></div>
+		<P>ease-out</P>
+		<div class="progress-bar" id="bar4"></div>
+		<P>ease-in-out</P>
+		<div class="progress-bar" id="bar5"></div>
+	</div>
+	
+</body>
+</html>
